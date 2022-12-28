@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta http-equiv="refresh" content="2207">
+    <!-- <link rel="shortcut icon" href="#"> -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/AoBR.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="main.js"></script>
+    <script src="questionDB.js"></script>
+    <script src="logIn.js"></script>
+    <script src="JS/c.js"></script>
+    <title>LeapFrog - AoBR</title>
+</head>
+<body>
+    
+
+    <header class="header bg-primary">
+         
+        <div class="main-title" style="display:flex; gap: 0.5rem;">
+            
+            
+            <i class="material-icons" style="color: rgb(153, 26, 26); font-size: 1.5rem;">import_contacts</i>
+            <p>Ease of Learning AoBR</p> 
+
+        </div>
+        <!-- <div class="right-title"> Question No: <span id="qno"></span> of 10</div> -->
+    </header>
+
+    <div class="tncContainer">
+
+        <h4>The Terms & Conditions of subscription are as under:</h4>
+        <div class="tncListContainer">
+            <ol class="tncList">
+                <li>The credentials issued are intended for one subscriber only and concurrent login using the same credential may result in invalidation or cancellation of the subscription without any refund. </li>
+                <li>The credentials are valid for a period of 12 months from the date of issue. Once the subscription term expires, it can be renewed after paying the applicable charges of that time.</li>
+                <li>There will be no refund of the subscription amount once paid.</li>
+                <li>It is our endeavour to provide the credentials within 2-3 hours of the payment. However, due to unforeseen circumstances, it may take upto 24 hours for issuing the credentials. Rest assured that once the payment is made, the credentials will be sent to the provided email id. You can always Whatsapp our team for getting the credentials immediately</li>
+                <li>If there is any issue regarding login, please e-mail us at<a class="emailContact" href="mailto:leapfrog.testseries@gmail.com">  leapfrog.testseries@gmail.com</a> and we will get back to you. </li>
+                <li>The details collected (Mobile and Email) are completely secure with us and we don't share any of your details with anyone or for any purpose other than sending credentials.</li>
+
+            </ol>
+        </div>
+    </div>
+
+    <div class="btn_TnC">
+         <button id="btn_Close_TnC">CLOSE</button>
+    </div>
+   
+
+    <script>
+        document.getElementById('btn_Close_TnC').addEventListener('click',closeWindow);
+
+        function closeWindow(){
+            window.close();
+        }
+    </script>
+
+    <style>
+        ul, li {margin-left: 0; padding-left: 0;}
+
+        .tncContainer{
+            width: 95%;
+            /* margin: 1rem; */
+            padding: 1rem;
+            margin: auto;
+            color: rgb(86, 86, 86);
+        }
+
+        .tncListContainer ol{
+            padding: 1rem 0.7rem;
+            margin-left: 2rem;
+        }
+        .tncListContainer li{
+            padding: 0.8rem 0;
+            font-size: 1rem;
+        }
+
+        .tncListContainer{
+            margin: 1.5rem 0;
+            background-color: rgb(249, 231, 229);
+            border-radius: 10px;
+            color: rgb(79, 19, 19);
+        }
+
+        .btn_TnC{
+            margin: auto;
+            text-align: center;
+            width: 100px;
+        }
+
+        button{
+            border: none;
+            width: 100px;
+
+            margin-bottom: 5rem;
+        }
+
+        .emailContact{
+            color: rgb(81, 76, 160);
+            text-decoration: underline;
+            margin:none;
+            padding: none;
+        }
+    </style>
+ 
+
+</body>
+</html>

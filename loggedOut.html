@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/AoBR.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="questionDB.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>You're Logged Out</title>
+</head>
+<body>
+   
+
+    <table id="lookup_results">
+        <th class="table_header">Subject </th>
+        <th class="table_header">Name of the Ministry/Department</th>
+        <th class="table_header">option 2</th>
+        <th class="table_header">option 3</th>
+        <th class="table_header">option 4</th>
+
+        <tr>
+            
+        </tr>
+    </table>
+
+    <script>
+
+        // document.addEventListener('DOMContentLoaded',loadTableAoBR);
+
+        // function loadTableAoBR(){
+            
+        //     var DBsize = AOBR_QB.length; 
+        //     //AOBR_QB.length;
+        //     let result_Table = document.getElementById('lookup_results');
+
+        //     for(let i=0;i<DBsize;i++){
+
+        //         let mdoSize = AOBR_QB[i][1].length;
+
+        //         console.log(mdoSize);
+
+        //         for(let j = 0; j<mdoSize;j++){
+               
+        //             let row =result_Table.insertRow(result_Table.rows.length);
+        //             let cell1 = row.insertCell(0);
+        //             let cell2 = row.insertCell(1);
+        //             let cell3 = row.insertCell(2);
+        //             let cell4 = row.insertCell(3);
+        //             let cell5 = row.insertCell(4);
+        //             // 
+                   
+        //                 cell1.innerHTML = AOBR_QB[i][1][j];
+        //                 if(cell1.innerHTML.substring(0,1)=="*"){
+        //                         cell1.style.fontWeight="bold";
+        //                         let strlen = cell1.innerHTML.length; // the length is needed to slice the string
+        //                         cell1.innerHTML = cell1.innerHTML.substring(1,strlen); // The * is being removed
+        //                     }
+        //                 cell2.innerHTML = AOBR_QB[i][0];
+
+        //                 if(i==0 || i>88){
+        //                     cell3.innerHTML = "NA";
+        //                     cell4.innerHTML = "NA";
+        //                     cell5.innerHTML = "NA";
+        //                 }
+
+        //                 else{
+        //                     cell3.innerHTML = Options_DB[i-1];
+        //                     cell4.innerHTML = Options_DB[i+1];
+        //                     cell5.innerHTML = Options_DB[i+2];
+        //                 }
+                    
+        //         }
+
+        //     }
+
+        // }
+
+    </script>
+
+</body>
+</html>

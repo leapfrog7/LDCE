@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="#"> -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="Styles/AoBR.css">
+    <script src="main.js"></script>
+    <script src="questionDB.js"></script>
+    <!-- <script src="logIn.js"></script> -->
+    <title>Mission LDCE</title>
+</head>
+<body>
+     
+    <!-- SIDE MENU -->
+
+     <div class="menuSide">
+
+		<div>
+			<label for="check" id="H-menu">
+
+			<input type="checkbox" name="menu-HM" id="check" class="H-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+
+			</label>
+		</div>
+		
+
+		<div id="myLinks">
+            <p>MENU</p>
+			<div class="links-sidebar">
+				<a href="AoBR.html"><i class="material-symbols-outlined">fact_check</i><p>Complete AoBR</p></a>
+			</div>
+		    
+		    <div class="links-sidebar">
+		    	<a href="AoBR_Quiz.html"> <i class="material-symbols-outlined">quiz</i> <p>Test Quiz on AoBR</p> </a>
+		    </div>
+
+		    <div class="links-sidebar">
+		    	<a href="AoBR_lookUp.html"> <i class="material-symbols-outlined">manage_search</i><p>AoBR Lookup</p></a>
+		    </div>
+
+            <div style="text-align:center; margin-top: 2rem;"><a href="index.html" id="sideMenu-Button">Log Out</a></div>
+            
+		    
+		    
+	   </div>
+
+	</div>
+
+    <!-- SIDE MENU ENDS -->
+
+    <header class="header bg-primary">
+        <div class="left-title">LDCE Quiz</div>
+        <div class="right-title"> Question No: <span id="qno"></span> of 10</div>
+    </header>
+
+    <section class="main-content">
+
+        <div style="margin-bottom: 1rem;">Which Department/Ministry is allocated the following Business:</div>
+       <div class="question" id="questionTitle"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit laborum architecto!
+       </div>
+
+       <div class="options-container" id="optionsBox">
+
+            <div class="options" data-options>
+                <input type="radio" id="option1" name="option" value="HTML">
+                <label for="option1">HTML1</label>
+                
+            </div>
+
+            <div class="options" data-options>
+                <input type="radio" id="option2" name="option" value="HTML">
+                <label for="option2">HTML2</label>
+            </div>
+
+            <div class="options" data-options>
+                <input type="radio" id="option3" name="option" value="HTML">
+                <label for="option3">HTML3</label>
+            </div>
+
+            <div class="options" data-options>
+                <input type="radio" id="option4" name="option" value="HTML">
+                <label for="option4">HTML4</label>
+            </div>
+            
+       </div>
+
+    </section>
+
+        <div id="optionShow">
+            Tap to show options
+        </div>
+    
+    <section class="movement">
+
+        <button class="btn" id="previous">
+            Previous
+        </button>
+        
+        <button class="btn" id="next">
+            Next
+        </button>
+    </section>
+
+    <section class="results" id="evaluation">
+        <p>Result :</p>
+        <div class="scoreArea" id="correctAns">
+            Correct Answer :
+        </div>
+
+        <div class="scoreArea" id="wrongAns">
+            Wrong Answer: 
+        </div>
+
+        <div class="scoreArea" id="remarks">
+            Good
+        </div>
+
+        <button id="tryAgain" class="button">
+            Try Again
+        </button>
+            
+
+    </section>  
+
+   <!-- <div class="goAOBR">
+       <a href="AoBR.html" target="_blank">Go To AoBR</a>
+   </div> -->
+
+
+   
+
+   <div class="margin_Footer" style="margin-top: 5rem;">
+
+   </div>
+
+   <footer>
+
+    <div class="footer_main">
+            <div class="about_Us">
+                <a href="#">About Us</a>
+                
+            </div>
+
+            <div class="tnc">
+                
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <!-- <div>
+                <a href="#">Subscribe</a>
+            </div> -->
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+        window.addEventListener('DOMContentLoaded',loadQuestions);
+        document.addEventListener('click', check);
+        document.getElementById('next').addEventListener('click',goNext);
+        document.getElementById('previous').addEventListener('click',goPrevious);
+        document.getElementById('tryAgain').addEventListener('click',loadAgain); 
+        document.getElementById('H-menu').addEventListener('input',myFunction);
+     //   document.getElementById('showTheOptions').addEventListener('click',makeVisible); 
+        
+</script>
+</body>
+</html>
