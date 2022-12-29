@@ -1,0 +1,160 @@
+
+
+.AoBR_Title{
+    color: rgb(133, 18, 18);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#MDO_DropDown{
+    width: 90%;
+    overflow-wrap: break-word;
+    /* text-overflow: ellipsis; */
+    /* overflow: hidden; */
+    height: 50px;
+    font-size: 0.9rem;
+
+    background-color: rgb(253, 223, 229);;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    /* border: none; */
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-bottom-color:rgb(253, 115, 143);
+    text-overflow: ellipsis;
+    
+}
+
+.selectMDO{
+    font-size: 1rem;
+    margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    color: rgb(145, 29, 53);
+}
+
+.selectMDO:hover{
+    transform: translateY(-3px);
+    transition: transform 200ms ease-in-out;
+}
+
+option{
+    word-wrap: break-word;
+}
+
+ul{
+    list-style-type:decimal;
+    overflow:scroll;
+}
+
+li{
+    padding: 0.2rem;
+}
+
+.AoBR_MainContent{
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+#list_work{
+    font-size: 0.9rem;
+    list-style-type:decimal;
+    padding-left: 2rem;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+    max-height: 70vh;
+    color: rgb(59, 59, 59);
+    background: rgb(254, 238, 241);
+     
+}
+
+#work_subHeading, #name_mdo{
+    font-size: 0.9rem;
+    text-align: center;
+  
+    background-color:rgb(252, 172, 188);;
+    color: rgb(66, 66, 66);
+}
+
+#work_subHeading{
+    padding: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer{
+    /* background: linear-gradient(330deg, rgba(21,148,142,1) 0%, rgba(39,3,113,1) 100%); */
+    padding: 0.8em 0.8em;
+    margin-top:1rem;
+    color: white;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+.footer_main{
+    font-weight: 400;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: space-evenly;
+    /* align-content: baseline; */
+    text-align: center;
+
+}
+
+
+a{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.movement{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(249, 227, 227,0.5);
+}
+
+#previous_MDO,#next_MDO{
+    background-color: rgb(174, 223, 219);
+    padding: 0.5rem;
+    width: 45%;
+    font-size: 0.7rem;
+    /* max-height: 10rem; */
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+@media only screen and (min-width: 768px){
+    footer{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 55%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    footer{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 45%;
+        margin: auto;
+        /* margin-top: 2rem; */
+    }
+
+}

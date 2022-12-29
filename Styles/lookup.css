@@ -1,0 +1,61 @@
+
+table{
+    width:95%;
+    margin: auto;
+}
+table, th, td {
+    border: 1px solid rgb(182, 68, 91);
+    border-collapse: collapse;
+
+  }
+
+tr{
+    font-size: 0.85rem;
+}
+
+th{
+    background-color: rgb(250, 214, 222);
+    color: rgb(121, 19, 19);
+    
+}
+
+th, td{
+    padding: 0.2rem;
+}
+
+td{
+    background-color: rgb(250, 241, 243);
+    color: rgb(126, 46, 46);
+}
+
+.table_header{
+    height: 2rem;
+}
+
+#search_field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    
+}
+
+#search_input{
+    outline: none;
+    width: 80%;
+    border-radius: 5px;
+    height: 2rem;
+    padding: 5px;
+}
+
+#search_input:focus{
+    background-color: rgb(255, 235, 239);
+}
+
+#noMatch{
+    margin: auto;
+    color: rgb(143, 47, 66);;
+    text-align: center;
+    padding: 2rem 1rem;
+}
