@@ -28,7 +28,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     <!-- <link rel="stylesheet" href="Styles/AoBR.css"> -->
     <script src="JS/AoBR_PremiumQuiz.js"></script>
     <script src="JS/AoBR_DB_Premium.js"></script>
-    <script src="JS/common.js"></script>
+    <script src="JS/common1.js"></script>
     <title>AoBR Quiz | Leapfrog</title>
 </head>
 <body>
@@ -78,6 +78,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    	<a href="GFR_Quiz.html"> <i class="material-symbols-outlined">receipt_long</i><p>GFR quiz</p></a>
 		    </div>
 
+            <div class="links-sidebar">
+		    	<a href="Constitution_Quiz.html"> <i class="material-symbols-outlined">gavel</i><p>Constitution Quiz</p></a>
+		    </div>
+
             <div id="logOutBtn" style="text-align:center; margin-top: 2rem; font-size: 1rem;"><a href="index.html" id="sideMenu-Button">Log Out</a></div>
             
 
@@ -100,9 +104,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <header class="header bg-primary">
-        <div class="left-title">AoBR Quiz</div>
-        <div class="right-title"> Question No: <span id="qno"></span> of 10</div>
+        <div class="main-title items-center" style="display:flex; gap: 0rem;">
+            
+            
+            <!-- <i class="material-icons" style="color: rgb(153, 26, 26); font-size: 1.5rem;">import_contacts</i> -->
+            <img src="/Images/leapfrog.png" alt="" width="150" height="60">
+            <!-- <p>The Leapfrog</p>  -->
+
+        </div>
     </header>
+
+    <section class="flex pageHeading">
+
+        <div class="left-title"><span class="test">AoBR Quiz</span>  </div>
+        <div class="right-title"> Question No: <span id="qno"></span> of 10</div>
+    </section>
 
     <section class="main-content">
         <p style="margin: 1rem 0;">The subject mentioned below is allocated to which Ministry / Department:</p>
@@ -168,7 +184,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 
     <section class="results" id="evaluation">
-        <p>Result :</p>
+
+        <!-- <p class="text-green-700 text-sm mb-1" id="explanation" style="display: none;">
+          
+       </p> -->
+
+        <p class="text-normal">Result :</p>
         <div class="scoreArea" id="correctAns">
             Correct Answer :
         </div>

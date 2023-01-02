@@ -26,7 +26,7 @@ header {
     
     /* background: linear-gradient(330deg, rgba(21,148,142,1) 0%, rgba(39,3,113,1) 100%); */
     background: linear-gradient(150deg, rgb(236, 168, 180) 0%, rgb(255, 219, 213) 100%);
-    padding: 1.5em 0.8em;
+    padding: 1em 0.8em;
     text-shadow: 1px 1px rgb(230, 162, 162);
  }
 
@@ -38,11 +38,29 @@ header {
      
  }
 
+ .pageHeading{
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+ }
+
 .left-title 
 {
     color: rgb(164, 59, 59);  
     margin:0 0.3rem;   
-    margin-left: 4rem;
+    margin-left: 0rem;
+    font-size: 1.5rem;
+   
+   
+}
+
+.test{
+    color: transparent;
+    background-image:  linear-gradient(to right, #7b166a 45%, #be4327);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .right-title 

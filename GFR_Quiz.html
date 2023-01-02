@@ -56,6 +56,10 @@
 		    	<a href="GFR_Quiz.html"> <i class="material-symbols-outlined">receipt_long</i><p>GFR quiz</p></a>
 		    </div>
 
+            <div class="links-sidebar">
+		    	<a href="Constitution_Quiz.html"> <i class="material-symbols-outlined">gavel</i><p>Constitution Quiz</p></a>
+		    </div>
+
             <div id="logOutBtn" style="text-align:center; margin-top: 2rem; font-size: 1rem;"><a href="index.html" id="sideMenu-Button">Log Out</a></div>
             
 
@@ -74,11 +78,23 @@
     <!-- SIDE MENU ENDS -->
     
     <header class="header bg-primary">
-        <div class="left-title">GFR Quiz</div>
-        <div class="right-title"> Question No: <span id="qno"></span> of 10</div>
-    </header>
+        <div class="main-title items-center" style="display:flex; gap: 0rem;">
+            
+            
+            <!-- <i class="material-icons" style="color: rgb(153, 26, 26); font-size: 1.5rem;">import_contacts</i> -->
+            <img src="/Images/leapfrog.png" alt="" width="150" height="60">
+            <!-- <p>The Leapfrog</p>  -->
 
-    <section class="main-content">
+        </div>   
+    </header>
+        
+    <section class="flex pageHeading">
+
+        <div class="left-title"><span class="test">GFR Quiz</span>  </div>
+        <div class="right-title"> Question No: <span id="qno"></span> of 10</div>
+    </section>
+    
+        <section class="main-content">
 
        <div class="question" id="questionTitle"> 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit laborum architecto!
@@ -140,9 +156,9 @@
 
     <section class="results" id="evaluation">
 
-        <div class="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base mb-3" role="alert">
-            <p class="text-gray-900 text-base leading-tight font-medium mb-1">Remarks : </p>
-            <p class="text-green-700 text-sm mb-2" id="explanation">
+        <div class="bg-green-100 rounded-lg py-3 px-3 mb-2 text-base w-11/12" role="alert">
+            <p class="text-gray-700 text-base leading-tight font-medium mb-1">Remarks : </p>
+            <p class="text-green-700 text-sm mb-1" id="explanation">
                  Some quick example text to build on the card title and make up the bulk of the card's
                  content.
             </p>
