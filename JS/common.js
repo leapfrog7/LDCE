@@ -96,6 +96,21 @@ function showQuestion(){
 
 }
 
+//this function takes a string and splits it into multiple lines and returns an array
+function splitIntoMultipleLines(jointString)
+{
+    let multiLineQuestion ='';
+    let multiLine = jointString.split('\n');
+
+    for(let i =0;i<multiLine.length;i++){
+
+        multiLineQuestion = multiLineQuestion + multiLine[i]+'<br>';
+    }
+
+    return multiLineQuestion;
+
+}
+
 function showOptions(){
 
     let radioID = "option";
@@ -153,6 +168,7 @@ function goNext(){
                 FromPrevious-=1;
             } 
         } 
+        
         
         explanation.innerHTML = Explanation_Arr[Question_Counter-1];
     }
@@ -607,9 +623,9 @@ function showAnswer()
     division.style.padding = "0.3rem 0.5rem";
 
     answerStr = Correct_Answers_Arr[Question_Counter-1];
-
+    
    if(Explanation_Arr[Question_Counter-1]!='-'){
-    answerStr= answerStr +"<br>"+ Explanation_Arr[Question_Counter-1];
+    answerStr= answerStr +"<br>"+ splitIntoMultipleLines(Explanation_Arr[Question_Counter-1]);
    }
 
     answer.innerHTML= answerStr;//Correct_Answers_Arr[Question_Counter-1];

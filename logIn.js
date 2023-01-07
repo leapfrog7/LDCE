@@ -8,6 +8,14 @@ function loadSettings(){
 
    document.getElementById('userName').value='';
    document.getElementById('msgOnLogin').style.display='none';
+
+//    if(localStorage.getItem('sessionValidity')=='true')
+//    {    
+//         localStorage.setItem('alreadyLoggedIn','true'); //this is to set the session storage if the user has already logged in and clicks on the home page button. not yet implemented
+//         console.log(localStorage.getItem('sessionValidity'));
+//         console.log(localStorage.getItem('alreadyLoggedIn'));
+//     }
+
    localStorage.setItem('sessionValidity','false');
 //    pwdValue('trial41');
     document.getElementById("check").checked=false;
@@ -245,8 +253,8 @@ function myFunction() {
         
         }
         
-        if(localStorage.getItem('sessionValidity')=='false'){
-
+        if(localStorage.getItem('sessionValidity')=='false')
+        {
             document.getElementById('ifLoggedOut').style.opacity = '1';
 
             let nodelist = document.querySelectorAll('.links-sidebar');
@@ -296,4 +304,11 @@ function myFunction() {
     document.getElementById('copyBtn').style.background = "#1d6e14";
     document.getElementById('copyBtn').style.color = "white";
     document.getElementById('copyBtn').innerHTML = "Copied";
+  }
+
+
+  function goToHome(){
+
+    window.location.assign('index.html');
+
   }

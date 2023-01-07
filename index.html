@@ -106,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <header class="header bg-primary">
          
-        <div class="main-title items-center" style="display:flex; gap: 0rem;">
+        <div class="main-title items-center" id="logoImg" style="display:flex; gap: 0rem;cursor: pointer;">
             
             
             <!-- <i class="material-icons" style="color: rgb(153, 26, 26); font-size: 1.5rem;">import_contacts</i> -->
@@ -255,7 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                  <div class="p-5 flex-col">
                     
                     
-                    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse  chronological order.</p>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Access the entire AoBR which contains over 2200 work items allocated across around 90 Ministries/Departments.</p>
                     
 
                     <div class="newCards">
@@ -272,7 +272,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="flex-col">  
                                         <p class="m-2 titleNewCard">Complete AoBR</p> 
-                                        <p class="text-sm subHeadingNewCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, repellat?</p>
+                                        <p class="text-sm subHeadingNewCard">Ministry/Depatment wise comprehensively listed work allocation as per latest orders</p>
                                 </div>   
                             </div>
                             
@@ -301,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="flex-col">  
                                         <p class="m-2 titleNewCard">AoBR Quiz</p> 
-                                        <p class="text-sm subHeadingNewCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, repellat?</p>
+                                        <p class="text-sm subHeadingNewCard"> Take unlimited number of tests to sharpen your memory retention.</p>
                                 </div>   
                             </div>
                             
@@ -333,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="flex-col">  
                                         <p class="m-2 titleNewCard">AoBR LookUp</p> 
-                                        <p class="text-sm subHeadingNewCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, repellat?</p>
+                                        <p class="text-sm subHeadingNewCard"> With dynamic search you can quickly check or find any particular work allocated to any Ministry/ Department.</p>
                                 </div>   
                             </div>
                             
@@ -634,6 +634,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.getElementById('subQuizBtn3').addEventListener('click',openModal);
         document.getElementsByClassName("close")[0].addEventListener('click',closeModal);
         document.getElementById('H-menu').addEventListener('input',myFunction);
+        document.getElementById('logoImg').addEventListener('click',goToHome);
 
         document.addEventListener("touchstart", startTouch, false);
         document.addEventListener("touchmove", moveTouch, false);
