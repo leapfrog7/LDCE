@@ -489,6 +489,9 @@ function showEvaluation(right, wrong){
         incorrect.innerHTML = "Wrong Answers : "+wrong
         comment.innerHTML = evaluationRemarks(right);
         explanation.innerHTML = Explanation_Arr[Question_Counter-1];
+
+        document.getElementById('showAnswerBtn').style.display = 'none';
+
         setResult();
        // result.className="results";
    // }
@@ -621,11 +624,12 @@ function showAnswer()
     division.style.background = '#d2fae7';
     division.style.margin = "1rem 0.8rem";
     division.style.padding = "0.3rem 0.5rem";
+    
 
-    answerStr = Correct_Answers_Arr[Question_Counter-1];
+    answerStr = "Answer :  " + Correct_Answers_Arr[Question_Counter-1];
     
    if(Explanation_Arr[Question_Counter-1]!='-'){
-    answerStr= answerStr +"<br>"+ splitIntoMultipleLines(Explanation_Arr[Question_Counter-1]);
+    answerStr= answerStr +"<br><br>"+ splitIntoMultipleLines(Explanation_Arr[Question_Counter-1]);
    }
 
     answer.innerHTML= answerStr;//Correct_Answers_Arr[Question_Counter-1];
