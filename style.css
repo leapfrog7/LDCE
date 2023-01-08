@@ -218,6 +218,10 @@ header {
     
 }
 
+#explanation{
+    margin: 0.6rem 0.2rem 0.8rem 0.2rem;
+}
+
 .scoreArea{
     width: 60%;
     padding: 0.5rem;
