@@ -530,28 +530,28 @@ function evaluationRemarks(right){
         case 0:
         case 1:
         case 2:
-            remarks = 'Mood hi khraab kar dia' +'&#129326';
+            remarks = 'Success is not final, failure is not fatal: it is the courage to continue that counts. Keep working hard and you will achieve the desired results.';
             break;
         case 3:
         case 4:
-            remarks = 'Not good... You need to go through AoBR properly!' + '&#128530';
+            remarks = 'Although your current score is not where you aim to be, you can improve a lot with little more focus. Do Remember, progress, not perfection is what counts.';
             break;
         
         case 5:
         case 6:
-            remarks = "Okay but still need to work harder!" + '&#128528';
+            remarks = "Good job! your hard work is paying off. Keep pushing forward and strive to achieve an even better score";
             break;
         
         case 7:
         case 8:
-            remarks = "Good work... keep it up!!" + '&#128527';
+            remarks = 'Well done! Keep up the effort and you will soon be the master of GFR';
             break;
         
         case 9:
-            remarks = "Excellent job!!!" + '&#128524';
+            remarks = "Outstanding! it demonstrates your sincerity, hard work and remarkable understanding of the subject. Keep up the great work!";
             break;
         case 10:
-            remarks = 'Perfect!!! ' + '&#128293'+ '&#128293'+ '&#128293';
+            remarks = 'Perfect!!! This is a testament to your exceptional abilities. But remember- Success is not final, failure is not fatal: it is the courage to continue that counts';
             break;
         default:
             remarks = "none";
