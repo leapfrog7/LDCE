@@ -186,7 +186,7 @@ function goNext(){
         }   
     }
     else{
-        alert('Arey Select Toh Karo Pehle Kuch');
+        alert('Please select an answer before proceeding to the next question.');
     }
     printSelectionArray();
 

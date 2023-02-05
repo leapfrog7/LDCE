@@ -173,7 +173,7 @@ function goNext(){
         explanation.innerHTML = Explanation_Arr[Question_Counter-1];
     }
     else{
-        alert('Arey Select Toh Karo Pehle Kuch');
+        alert('Please select an answer before proceeding to the next question.');
     }
     printSelectionArray();
 
