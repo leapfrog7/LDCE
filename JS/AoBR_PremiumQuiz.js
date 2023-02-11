@@ -544,7 +544,7 @@ function evaluationRemarks(right){
         
         case 7:
         case 8:
-            remarks = 'Well done! Keep up the effort and you will soon be the master of GFR';
+            remarks = 'Well done! Keep up the effort and you will soon acquire the mastery on this topic';
             break;
         
         case 9:
