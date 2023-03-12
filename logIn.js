@@ -87,9 +87,10 @@ function hideAfterLogIn(){
     document.getElementById("loginSection").style.display = 'none';
     document.getElementById("subscribeInfo").style.display ='none';
     document.getElementById('mainIntro').style.display='none';
+    document.getElementById('subscriptionPriceLogo').style.display='none';
     let uName = document.getElementById('userName').value;
     document.getElementById("packDetails").innerHTML = "Welcome " + uName+ ", you now have access to the following:"
-    setTimeout(hideBanner,2000);
+    setTimeout(hideBanner,1000);
 }
 
 function loadValidUsers(){
