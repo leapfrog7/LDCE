@@ -29,21 +29,30 @@ function hideButtons(){
     lookup = document.getElementById('lookup_AOBR');
     quizGFR = document.getElementById('quizGFR');
     quizConstitution = document.getElementById('quizConstitution');
+    quizPension = document.getElementById('quizPensionRules');
+    quizLeave = document.getElementById('quizLeaveRules');
 
     subButton1 = document.getElementById('subQuizBtn');
     subButton2 = document.getElementById('subQuizBtn1');
     subButton3 = document.getElementById('subQuizBtn2');
     subButton4 = document.getElementById('subQuizBtn3');
+    subButton5 = document.getElementById('subQuizBtn4');
+    subButton6 = document.getElementById('subQuizBtn5');
 
     subButton1.style.display='block';
     subButton2.style.display='block';
     subButton3.style.display='block';
     subButton4.style.display='block';
+    subButton5.style.display='block';
+    subButton6.style.display='block';
+
     // list.style.display = 'none';
     quiz.style.display = 'none';
     lookup.style.display = 'none';
     quizGFR.style.display = 'none';
     quizConstitution.style.display = 'none';
+    quizLeave.style.display = 'none';
+    quizPension.style.display = 'none';
 }
 
 function showButtons(){
@@ -51,15 +60,24 @@ function showButtons(){
     quiz = document.getElementById('quiz_AOBR');
     lookup = document.getElementById('lookup_AOBR');
     quizGFR = document.getElementById('quizGFR');
+    quizLeave = document.getElementById('quizLeaveRules');
+    quizPension = document.getElementById('quizPensionRules');
+
     subButton1.style.display = 'none';
     subButton2.style.display = 'none';
     subButton3.style.display = 'none';
     subButton4.style.display = 'none';
+    subButton5.style.display = 'none';
+    subButton6.style.display = 'none';
+
     list.style.display = 'block';
     quiz.style.display = 'block';
     quizGFR.style.display='block';
     lookup.style.display = 'block';
     quizConstitution.style.display = 'block';
+    quizLeave.style.display = 'block';
+    quizPension.style.display='block';
+
     localStorage.setItem('sessionValidity','true');
 }
 
