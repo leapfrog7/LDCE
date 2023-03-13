@@ -762,6 +762,12 @@ background: linear-gradient(180deg, rgb(252, 239, 239) 0%, rgba(254,254,254,1) 1
                   box-shadow 250ms linear;
     }
 
+    #myLinks{
+      height: 150vh;
+    }
+
+    
+
    .upiAppLink{
     display: none;
    }
