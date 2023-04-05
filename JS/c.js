@@ -70,6 +70,10 @@ var Global_C =[
     ['prashant134','prashant35254',1],
     ['kapil164','kapil65450',0],
     ['md173','md75155',1],
+    ['girish95','girish64954',1],
+
+    ['aditi158','aditi55652',1],
+    ['neeraj189','neeraj85749',1],
     
     ['nidhi133','nidhi35754',1],
     ['pratibha101','pratibha25055',1],
@@ -82,6 +86,7 @@ var Global_C =[
     ['user119','user35151',1],
     ['user163','user65251',1],
     ['user139','user45353',1],
+    ['amiya123','amiya15051',1],
     
     ['trial46','trial44856',2],
     ['trial','trial7',2],
