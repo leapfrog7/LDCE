@@ -31,6 +31,8 @@ function hideButtons(){
     quizConstitution = document.getElementById('quizConstitution');
     quizPension = document.getElementById('quizPensionRules');
     quizLeave = document.getElementById('quizLeaveRules');
+    quizConduct = document.getElementById('quizConductRules');
+    quizCCA = document.getElementById('quizCCARules');
 
     subButton1 = document.getElementById('subQuizBtn');
     subButton2 = document.getElementById('subQuizBtn1');
@@ -38,6 +40,8 @@ function hideButtons(){
     subButton4 = document.getElementById('subQuizBtn3');
     subButton5 = document.getElementById('subQuizBtn4');
     subButton6 = document.getElementById('subQuizBtn5');
+    subButton7 = document.getElementById('subQuizBtn6');
+    subButton8 = document.getElementById('subQuizBtn7');
 
     subButton1.style.display='block';
     subButton2.style.display='block';
@@ -45,6 +49,8 @@ function hideButtons(){
     subButton4.style.display='block';
     subButton5.style.display='block';
     subButton6.style.display='block';
+    subButton7.style.display='block';
+    subButton8.style.display='block';
 
     // list.style.display = 'none';
     quiz.style.display = 'none';
@@ -53,6 +59,8 @@ function hideButtons(){
     quizConstitution.style.display = 'none';
     quizLeave.style.display = 'none';
     quizPension.style.display = 'none';
+    quizConduct.style.display = 'none';
+    quizCCA.style.display = 'none';
 }
 
 function showButtons(){
@@ -62,6 +70,8 @@ function showButtons(){
     quizGFR = document.getElementById('quizGFR');
     quizLeave = document.getElementById('quizLeaveRules');
     quizPension = document.getElementById('quizPensionRules');
+    quizConduct = document.getElementById('quizConductRules');
+    quizCCA = document.getElementById('quizCCARules');
 
     subButton1.style.display = 'none';
     subButton2.style.display = 'none';
@@ -69,6 +79,8 @@ function showButtons(){
     subButton4.style.display = 'none';
     subButton5.style.display = 'none';
     subButton6.style.display = 'none';
+    subButton7.style.display = 'none';
+    subButton8.style.display = 'none';
 
     list.style.display = 'block';
     quiz.style.display = 'block';
@@ -77,6 +89,8 @@ function showButtons(){
     quizConstitution.style.display = 'block';
     quizLeave.style.display = 'block';
     quizPension.style.display='block';
+    quizConduct.style.display = 'block';
+    quizCCA.style.display = 'block';
 
     localStorage.setItem('sessionValidity','true');
 }

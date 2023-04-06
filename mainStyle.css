@@ -506,7 +506,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   visibility: hidden;
 	transition: all 0.4s ease-in;
 	position: absolute;
-	height: 130vh;
+	height: 140vh;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left: solid 1px #ac5151;
@@ -763,7 +763,7 @@ background: linear-gradient(180deg, rgb(252, 239, 239) 0%, rgba(254,254,254,1) 1
     }
 
     #myLinks{
-      height: 150vh;
+      height: 180vh;
     }
 
     
