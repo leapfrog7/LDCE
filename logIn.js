@@ -88,6 +88,7 @@ function hideAfterLogIn(){
     document.getElementById("subscribeInfo").style.display ='none';
     document.getElementById('mainIntro').style.display='none';
     document.getElementById('subscriptionPriceLogo').style.display='none';
+    document.getElementById('sampleSection').style.display = 'none';
     let uName = document.getElementById('userName').value;
     document.getElementById("packDetails").innerHTML = "Welcome " + uName+ ", you now have access to the following:"
     setTimeout(hideBanner,1000);
