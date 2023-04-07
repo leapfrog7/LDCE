@@ -752,6 +752,10 @@ background: linear-gradient(180deg, rgb(252, 239, 239) 0%, rgba(254,254,254,1) 1
       transition: transform 250ms linear, box-shadow 250ms linear;
     }
 
+    .callToAction{
+      justify-content: space-around;
+    }
+
     .card:hover{
       /* box-shadow: 0 5px 0 rgb(255, 173, 173); */
       transform: translateY(-5px);
