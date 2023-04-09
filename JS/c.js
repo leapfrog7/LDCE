@@ -82,7 +82,7 @@ var Global_C =[
     ['rajesh127','rajesh25749',1],
     ['ravi109','ravi14855',1],
     ['daku117','daku25251',1],
-    ['vinay145','vinay14856',1],
+    ['vinay145','vinay14856',0],
     ['lokesh99','lokesh45548',1],
     ['shivam165','shivam65555',1],
     ['vinay112','vinay14856',1],
@@ -106,12 +106,9 @@ var Global_C =[
     ['trial46','trial44856',2],
     ['trial','trial7',2],
     ['aobr123','aobr15051',2],
-    ['ldce123','ldce15051',1],
+    ['ldce123','ldce15051',0],
     
-    
-    
-    
-    
+
 
 ];
 
