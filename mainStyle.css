@@ -740,6 +740,54 @@ background: linear-gradient(180deg, rgb(252, 239, 239) 0%, rgba(254,254,254,1) 1
   color: rgb(108, 108, 108);
 }
 
+
+.card_CA{
+   height: 120px;
+   width: 33%;
+   background-color: #9c3030;
+   margin: auto;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  
+
+}
+
+.container_Card_CA{
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card_CA_Text{
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 5px;
+
+  
+   
+}
+
+.card_CA:hover{
+  background-color: #650d08;
+  translate: 0px -4px;
+  transition: translate 200ms ease-in;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+ .card_CA{
+  width: 40%;
+  margin: auto;
+  justify-content: center;
+ }
+}
+
   @media only screen and (min-width: 1000px){
     .modal-content{
       width: 45%;
