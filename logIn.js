@@ -33,6 +33,8 @@ function hideButtons(){
     quizLeave = document.getElementById('quizLeaveRules');
     quizConduct = document.getElementById('quizConductRules');
     quizCCA = document.getElementById('quizCCARules');
+    quizDFPR = document.getElementById('quizDFPR');
+    quizRTI = document.getElementById('quizRTI');
 
     subButton1 = document.getElementById('subQuizBtn');
     subButton2 = document.getElementById('subQuizBtn1');
@@ -42,6 +44,8 @@ function hideButtons(){
     subButton6 = document.getElementById('subQuizBtn5');
     subButton7 = document.getElementById('subQuizBtn6');
     subButton8 = document.getElementById('subQuizBtn7');
+    subButton9 = document.getElementById('subQuizBtn8');
+    subButton10 = document.getElementById('subQuizBtn9');
 
     subButton1.style.display='block';
     subButton2.style.display='block';
@@ -51,6 +55,8 @@ function hideButtons(){
     subButton6.style.display='block';
     subButton7.style.display='block';
     subButton8.style.display='block';
+    subButton9.style.display = 'block';
+    subButton10.style.display = 'block';
 
     // list.style.display = 'none';
     quiz.style.display = 'none';
@@ -61,6 +67,8 @@ function hideButtons(){
     quizPension.style.display = 'none';
     quizConduct.style.display = 'none';
     quizCCA.style.display = 'none';
+    quizDFPR.style.display = 'none';
+    quizRTI.style.display = 'none';
 }
 
 function showButtons(){
@@ -72,6 +80,8 @@ function showButtons(){
     quizPension = document.getElementById('quizPensionRules');
     quizConduct = document.getElementById('quizConductRules');
     quizCCA = document.getElementById('quizCCARules');
+    quizDFPR = document.getElementById('quizDFPR');
+    quizRTI = document.getElementById('quizRTI');
 
     subButton1.style.display = 'none';
     subButton2.style.display = 'none';
@@ -81,6 +91,8 @@ function showButtons(){
     subButton6.style.display = 'none';
     subButton7.style.display = 'none';
     subButton8.style.display = 'none';
+    subButton9.style.display = 'none';
+    subButton10.style.display = 'none';
 
     list.style.display = 'block';
     quiz.style.display = 'block';
@@ -91,6 +103,8 @@ function showButtons(){
     quizPension.style.display='block';
     quizConduct.style.display = 'block';
     quizCCA.style.display = 'block';
+    quizDFPR.style.display = 'block';
+    quizRTI.style.display = 'block';
 
     localStorage.setItem('sessionValidity','true');
 }

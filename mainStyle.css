@@ -506,7 +506,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   visibility: hidden;
 	transition: all 0.4s ease-in;
 	position: absolute;
-	height: 140vh;
+	height: 155vh;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left: solid 1px #ac5151;
@@ -786,7 +786,18 @@ background: linear-gradient(180deg, rgb(252, 239, 239) 0%, rgba(254,254,254,1) 1
   margin: auto;
   justify-content: center;
  }
+
+
+
 }
+
+@media (max-width: 900px){
+  #myLinks{
+    height: 240vh;
+  }
+
+}
+
 
   @media only screen and (min-width: 1000px){
     .modal-content{
@@ -815,7 +826,7 @@ background: linear-gradient(180deg, rgb(252, 239, 239) 0%, rgba(254,254,254,1) 1
     }
 
     #myLinks{
-      height: 180vh;
+      height: 230vh;
     }
 
     
