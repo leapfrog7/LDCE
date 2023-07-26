@@ -34,12 +34,16 @@
     
     <link href="/dist/output.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="Styles/AoBR.css"> -->
-   
+    <script src="JS/GFR_Chapterwise/GFR_upto_Rule324_Quiz.js"></script>
+    <script src="JS/GFR_Chapterwise/GFR_upto_Rule324_DB.js"></script>
     <script src="JS/common.js"></script>
-    <title>GFR Quiz Chapter Wise | Leapfrog</title> 
+    <title>GFR Quiz Chapter Wise | Leapfrog</title>
 </head>
-
 <body>
+
+    
+
+
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT2833G"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -77,7 +81,7 @@
 		    </div>
 
             <div class="links-sidebar">
-		    	<a href="GFR_Quiz.html"> <i class="material-symbols-outlined">currency_rupee</i><p>GFR Quiz</p></a>
+		    	<a href="GFR_Quiz.html"> <i class="material-symbols-outlined">currency_rupee</i><p>GFR quiz</p></a>
 		    </div>
 
             <div class="links-sidebar">
@@ -89,14 +93,6 @@
 		    </div>
             <div class="links-sidebar">
 		    	<a href="CCS_Pension_Rules.html"> <i class="material-symbols-outlined">elderly_woman</i><p>Pension Rules Quiz</p></a>
-		    </div>
-
-            <div class="links-sidebar">
-		    	<a href="CCS_Conduct_Rules.html"> <i class="material-symbols-outlined">conditions</i><p>Conduct Rules Quiz</p></a>
-		    </div>
-
-            <div class="links-sidebar">
-		    	<a href="CCS_CCA_Rules.html"> <i class="material-symbols-outlined">balance</i><p>CCA Rules Quiz</p></a>
 		    </div>
 
             <div id="logOutBtn" style="text-align:center; margin-top: 2rem; font-size: 1rem;"><a href="index.html" id="sideMenu-Button">Log Out</a></div>
@@ -126,88 +122,148 @@
 
         </div>   
     </header>
+        
+    <section class="flex pageHeading">
 
-    <Section style="padding: 10px;">
-            <h3 style="text-align: center; margin-bottom: 0.5rem; font-size: 1.2rem; margin-top: 0.5rem; color: #712b06;">Chapter Wise GFR</h3>
-            <p style="font-size: 0.9rem; color: #5f5f5f;">Chapter wise GFR quizzes - Special Edition</p>
-    </Section>
-
-    <Section >
-
-        <div class="container_Card_CA">
-
-            <div id="GFR_upto70" class="card_CA" style="background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);">
-                <p class="card_CA_Text" style="color: rgb(42, 42, 108);">Rule 1 to Rule 70 ,<br> <span style="font-size: 0.7rem;">General Financial System, Budget Formulation & Implementation</span></p>
-            </div>
+        <div class="left-title"><span class="test" style="font-size: 1rem;">GFR - Chapter 10 to 12 </span>  </div>
+        <div style="font-size: 1rem;" class="right-title"> Question No: <span id="qno"></span> of 10</div>
+    </section>
     
-            <div id="GFR_upto141" class="card_CA" style="background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);">
-                <p class="card_CA_Text" style="color: #742b5f;">Rule 71 to Rule 141<br> <span style="font-size: 0.7rem;">Govt. Accounts and Works</span></p>
+        <section class="main-content">
+
+       <div class="question" id="questionTitle" style="font-size: 1rem;"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit laborum architecto!
+       </div>
+
+       <div class="options-container" id="optionsBox" style="font-size: 0.9rem;">
+
+            <div class="options" data-options>
+                <input type="radio" id="option1" name="option" value="HTML">
+                <label for="option1">HTML1</label>
+                
             </div>
+
+            <div class="options" data-options>
+                <input type="radio" id="option2" name="option" value="HTML">
+                <label for="option2">HTML2</label>
+            </div>
+
+            <div class="options" data-options>
+                <input type="radio" id="option3" name="option" value="HTML">
+                <label for="option3">HTML3</label>
+            </div>
+
+            <div class="options" data-options>
+                <input type="radio" id="option4" name="option" value="HTML">
+                <label for="option4">HTML4</label>
+            </div>
+            
+       </div>
+
+    </section>
+
+        <div id="optionShow">
+            Tap to show options
+        </div>
+    
+    <section class="movement">
+
+        <button class="btn" id="previous">
+            Previous
+        </button>
+        
+        <button class="btn" id="next">
+            Next
+        </button>
+    </section>
+
+    <div id="sectionShowAnswer">
+        
+        <div class="showAnswer">
+            <button id="showAnswerBtn">Show Answer</button>
         </div>
 
-        <div class="container_Card_CA">
-            <div id="GFR_upto206" class="card_CA" style="background-image: linear-gradient(to left, #f98e86 0%, #f9988f 0%, #ff8c7f 21%, #f8b0a8 52%, #eea8b5 78%, #d78faa 100%);">
-                <p class="card_CA_Text" style="color: #712b06;">Rule 142 to Rule 206<br> <span style="font-size: 0.7rem;">Procurement of Goods & Services</p>
-            </div>
+        <div id="divCorrectAnswer">
+            
+            <p id="correctAnswer"></p>
+        </div>
+    </div>
 
-            <div id="GFR_upto263" class="card_CA" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);">
-                <p class="card_CA_Text" style="color: #167238;">Rule 207 to Rule 263<br> <span style="font-size: 0.7rem;">Inventory Mgmt, Contract Mgmt and Grants-in-Aid and Loans</p>
-            </div>
+    <section class="results" id="evaluation">
 
+        <div class="bg-green-100 rounded-lg py-3 px-3 mb-2 text-base w-11/12" role="alert">
+            <p class="text-gray-700 text-base leading-tight font-medium mb-1" style="margin-top:0.5rem">Remarks : </p>
+            <p class="text-green-700 text-sm my-2" id="explanation">
+                 Some quick example text to build on the card title and make up the bulk of the card's
+                 content.
+            </p>
+        
         </div>
 
-        <div class="container_Card_CA">
-            <div id="GFR_upto324" class="card_CA" style="background-image: linear-gradient(to top, #acefec 0%, #86abfb 100%);">
-                <p class="card_CA_Text" style="color: #4f0cab;"> Rule 264 to Rule 324 <br><span style="font-size: 0.7rem;">B&A for Externally Aided Projects, Govt. Guarantees and Misc.</span></p>
+        <div class="scoreArea" id="correctAns">
+            Correct Answer :
+        </div>
+
+        <div class="scoreArea" id="wrongAns">
+            Wrong Answer: 
+        </div>
+
+        <div class="scoreArea" id="remarks">
+            Good
+        </div>
+
+        <button id="tryAgain" class="button">
+            Take Another Test
+        </button>
+            
+
+    </section>  
+
+   <!-- <div class="goAOBR">
+       <a href="AoBR.html" target="_blank">Go To AoBR</a>
+   </div> -->
+
+
+   
+
+   <div class="margin_Footer" style="margin-top: 5rem;">
+
+   </div>
+
+   <footer>
+
+    <div class="footer_main">
+            <div class="about_Us">
+                <a href="#">About Us</a>
+                
             </div>
 
-            <!-- <div id="Jun_CA" class="card_CA" style="background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);">
-                <p class="card_CA_Text" style="color: #74410d;">June, 2023</p>
+            <div class="tnc">
+                
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+            <!-- <div>
+                <a href="#">Subscribe</a>
             </div> -->
-
-        </div> 
-
-    </Section>
-
-    <footer>
-
-        <div class="footer_main">
-                <div class="about_Us">
-                    <a href="#">About Us</a>
-                    
-                </div>
-    
-                <div class="tnc">
-                    
-                    <a href="#">Terms & Conditions</a>
-                </div>
-    
-                <!-- <div>
-                    <a href="#">Subscribe</a>
-                </div> -->
-        </div>
-    </footer>
+    </div>
+</footer>
 
 
-    <script type="text/javascript">
-        //window.addEventListener('DOMContentLoaded',loadQuestions);
+
+<script type="text/javascript">
+        window.addEventListener('DOMContentLoaded',loadQuestions);
         document.addEventListener('click', check);
-        //document.getElementById('next').addEventListener('click',goNext);
-        //document.getElementById('previous').addEventListener('click',goPrevious);
-        //document.getElementById('tryAgain').addEventListener('click',loadAgain); 
-        //document.getElementById('showAnswerBtn').addEventListener('click',showAnswer);
+        document.getElementById('next').addEventListener('click',goNext);
+        document.getElementById('previous').addEventListener('click',goPrevious);
+        document.getElementById('tryAgain').addEventListener('click',loadAgain); 
+        document.getElementById('showAnswerBtn').addEventListener('click',showAnswer);
      //   document.getElementById('showTheOptions').addEventListener('click',makeVisible); 
-        document.getElementById('H-menu').addEventListener('input',myFunction);
+     document.getElementById('H-menu').addEventListener('input',myFunction);
      //   document.getElementById('showTheOptions').addEventListener('click',makeVisible); 
         document.addEventListener("touchstart", startTouch, false);
         document.addEventListener("touchmove", moveTouch, false);
-        document.getElementById('GFR_upto70').addEventListener('click', function(){window.location.href = 'GFR_upto70.html'});
-        document.getElementById('GFR_upto141').addEventListener('click', function(){window.location.href = 'GFR_upto141.html'});
-        document.getElementById('GFR_upto206').addEventListener('click', function(){window.location.href = 'GFR_upto206.html'});
-        document.getElementById('GFR_upto263').addEventListener('click', function(){window.location.href = 'GFR_upto263.html'});
-        document.getElementById('GFR_upto324').addEventListener('click', function(){window.location.href = 'GFR_upto324.html'});
-        // document.getElementById('Nov_CA').addEventListener('click', function(){window.location.href = 'CA_November22.html'});
         
 </script>
-
 </body>
+</html>
