@@ -1,4 +1,4 @@
-var Global_C =[
+var Global_C = [
 
     ['yatin','yatin',1],
     ['yatin1','yatin11',1],
@@ -120,7 +120,7 @@ var Global_C =[
     ['mohd177','mohd75554',0],
     ['ajay131','ajay45055',1],
     ['pardeep99','pardeep15553',1],
-    ['sanjeev192','sanjeev95049',1
+    ['sanjeev192','sanjeev95049',1],
     ['ruby107','ruby15757',1],
     
     ['amit130','amit34951',1],
