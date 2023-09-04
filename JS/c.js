@@ -153,6 +153,7 @@ var Global_C = [
     ['lekhraj142','lekhraj54849',1],
     ['raghav149','raghav55152',1],
     ['ashish109','ashish15749',1],
+    ['jagjeet184','jagjeet85252',1],
 
     
     ['amit130','amit34951',1],
