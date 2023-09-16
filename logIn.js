@@ -128,7 +128,7 @@ function loadValidUsers(){
     
     for(let i = 0; i< Global_C.length;i++){
 
-        if(Global_C[i][2]==1 || Global_C[i][2]==2){
+        if(Global_C[i][2]==1 || Global_C[i][2]==2 ||Global_C[i][2]==3 || Global_C[i][2]==4 ){
             validUser.push(Global_C[i][0]);
         }
         
