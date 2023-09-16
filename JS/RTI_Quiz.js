@@ -5,21 +5,33 @@ function loadQuestions(){
     
     if(localStorage.getItem('sessionValidity')=='true'){
 
-        hideEvaluation();
-        hideOptions();
-        const size_QB = Global_RTI.length; //this measures the no. of row entries in the array
-        const randomArr = generateRandomNumbers(size_QB-1); // generates a random number array for selecting questions
-        
-        loadQnA(randomArr);
-        console.log(Question_Arr);
-        console.log(Correct_Answers_Arr);
-        console.log(Selection_Options_Arr);
+        //This checks whether the access is for correct subscription
+        if(localStorage.getItem('accessType')=='paper2'){
+            alert("Your subscription is for paper 2 only.")
+            window.location.assign('index.html');
+        }
 
-        User_Response.fill(0);
-        setQno();
-        showQuestion();
-        uncheckOptions();
+        //If the subscription is correct then load the question
+        else{
+
+            hideEvaluation();
+            hideOptions();
+            const size_QB = Global_RTI.length; //this measures the no. of row entries in the array
+            const randomArr = generateRandomNumbers(size_QB-1); // generates a random number array for selecting questions
+            
+            loadQnA(randomArr);
+            console.log(Question_Arr);
+            console.log(Correct_Answers_Arr);
+            console.log(Selection_Options_Arr);
+     
+            User_Response.fill(0);
+            setQno();
+            showQuestion();
+            uncheckOptions();
+        }
     }
+
+    //If the user is logged out then go to Home Page
     else{
         window.location.assign('index.html');
     }

@@ -17,6 +17,7 @@ function loadSettings(){
 //     }
 
    localStorage.setItem('sessionValidity','false');
+   localStorage.setItem('accessType','none');
 //    pwdValue('trial41');
     document.getElementById("check").checked=false;
     myFunction();
@@ -164,17 +165,39 @@ function checkValidity(){
                     if(nPwd == Global_C[i][1]){
 
                         if(Global_C[i][2]==1){
+                            console.log(Global_C[i][2],"yahan nhi chahiye");
                             document.getElementById('msgOnLogin').style.display='block';
                             document.getElementById('msgOnLogin').innerHTML = "Logged in Successfully!"
                             showButtons();
                             isValidPassword = true;
+                            localStorage.setItem('accessType','full');
                             hideAfterLogIn();
                         }
                         if(Global_C[i][2]==2){
                             isValidPassword = true;
                             alert("The trial version has ended! Subscribe to access the modules!");
                         }
-                        
+
+                        if(Global_C[i][2]== 3){
+                            console.log("yahan sahi hai");
+                            document.getElementById('msgOnLogin').style.display='block';
+                            document.getElementById('msgOnLogin').innerHTML = "Logged in Successfully!"
+                            showButtonsPaper1();
+                            isValidPassword = true;
+                            localStorage.setItem('accessType','paper1');
+                            hideAfterLogIn();
+                        }
+
+                        if(Global_C[i][2]== 4){
+                            console.log("yahan sahi hai in paper 2");
+                            document.getElementById('msgOnLogin').style.display='block';
+                            document.getElementById('msgOnLogin').innerHTML = "Logged in Successfully!"
+                            showButtonsPaper2();
+                            isValidPassword = true;
+                            localStorage.setItem('accessType','paper2');
+                            hideAfterLogIn();
+                        }
+                       
                     }
                 }
             
@@ -193,6 +216,92 @@ function checkValidity(){
     }
 
 }
+
+//Function to show options only if subscribed to Paper 1
+function showButtonsPaper1(){
+    list = document.getElementById('list_AOBR');
+    quiz = document.getElementById('quiz_AOBR');
+    lookup = document.getElementById('lookup_AOBR');
+    quizGFR = document.getElementById('quizGFR');
+    quizLeave = document.getElementById('quizLeaveRules');
+    quizPension = document.getElementById('quizPensionRules');
+    quizConduct = document.getElementById('quizConductRules');
+    quizCCA = document.getElementById('quizCCARules');
+    quizDFPR = document.getElementById('quizDFPR');
+    quizRTI = document.getElementById('quizRTI');
+
+    subButton1.style.display = 'none';
+    subButton2.style.display = 'none';
+    subButton3.style.display = 'block';
+    subButton4.style.display = 'none';
+    subButton5.style.display = 'block';
+    subButton6.style.display = 'block';
+    subButton7.style.display = 'block';
+    subButton8.style.display = 'block';
+    subButton9.style.display = 'none';
+    subButton10.style.display = 'none';
+
+    list.style.display = 'block';
+    quiz.style.display = 'block';
+    quizGFR.style.display='none';
+    lookup.style.display = 'block';
+    quizConstitution.style.display = 'block';
+    quizLeave.style.display = 'none';
+    quizPension.style.display='none';
+    quizConduct.style.display = 'none';
+    quizCCA.style.display = 'none';
+    quizDFPR.style.display = 'block';
+    quizRTI.style.display = 'block';
+
+    console.log(document.getElementsByClassName('GFR_Card'));
+
+    document.getElementsByClassName('GFR_Card')[0].style.display = 'none';
+    document.getElementsByClassName('CCS_Card')[0].style.display = 'none';
+
+    localStorage.setItem('sessionValidity','true');
+}
+
+function showButtonsPaper2(){
+    list = document.getElementById('list_AOBR');
+    quiz = document.getElementById('quiz_AOBR');
+    lookup = document.getElementById('lookup_AOBR');
+    quizGFR = document.getElementById('quizGFR');
+    quizLeave = document.getElementById('quizLeaveRules');
+    quizPension = document.getElementById('quizPensionRules');
+    quizConduct = document.getElementById('quizConductRules');
+    quizCCA = document.getElementById('quizCCARules');
+    quizDFPR = document.getElementById('quizDFPR');
+    quizRTI = document.getElementById('quizRTI');
+
+    subButton1.style.display = 'block';
+    subButton2.style.display = 'block';
+    subButton3.style.display = 'none';
+    subButton4.style.display = 'block';
+    subButton5.style.display = 'none';
+    subButton6.style.display = 'none';
+    subButton7.style.display = 'none';
+    subButton8.style.display = 'none';
+    subButton9.style.display = 'block';
+    subButton10.style.display = 'block';
+
+    list.style.display = 'none';
+    quiz.style.display = 'none';
+    quizGFR.style.display='block';
+    lookup.style.display = 'none';
+    quizConstitution.style.display = 'none';
+    quizLeave.style.display = 'block';
+    quizPension.style.display='block';
+    quizConduct.style.display = 'block';
+    quizCCA.style.display = 'block';
+    quizDFPR.style.display = 'none';
+    quizRTI.style.display = 'none';
+
+    document.getElementsByClassName('AoBR_Card')[0].style.display = 'none';
+    document.getElementsByClassName('Constitution_Card')[0].style.display = 'none';
+
+    localStorage.setItem('sessionValidity','true');
+}
+
 
 function pwdValue(pStr){
 
@@ -319,6 +428,9 @@ function myFunction() {
             for(let i =0;i<nodelist.length;i++){
                 nodelist[i].style.display = 'block';
             }
+
+            setMenuAccess();
+
             document.getElementById('ifLoggedOut').style.opacity = '0';
            
             document.getElementById('logOutBtn').style.opacity = '1';

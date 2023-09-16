@@ -5,20 +5,27 @@ function loadQuestions(){
     
     if(localStorage.getItem('sessionValidity')=='true'){
 
-        hideEvaluation();
-        hideOptions();
-        const size_QB = Global_PensionRules.length; //this measures the no. of row entries in the array
-        const randomArr = generateRandomNumbers(size_QB-1); // generates a random number array for selecting questions
-        
-        loadQnA(randomArr);
-        console.log(Question_Arr);
-        console.log(Correct_Answers_Arr);
-        console.log(Selection_Options_Arr);
+        if(localStorage.getItem('accessType')=='paper1'){
+            alert("Your subscription is for paper 1 only.")
+            window.location.assign('index.html');
+        }
+        else{
+            hideEvaluation();
+            hideOptions();
+            const size_QB = Global_PensionRules.length; //this measures the no. of row entries in the array
+            const randomArr = generateRandomNumbers(size_QB-1); // generates a random number array for selecting questions
+            
+            loadQnA(randomArr);
+            console.log(Question_Arr);
+            console.log(Correct_Answers_Arr);
+            console.log(Selection_Options_Arr);
+    
+            User_Response.fill(0);
+            setQno();
+            showQuestion();
+            uncheckOptions();
+        }
 
-        User_Response.fill(0);
-        setQno();
-        showQuestion();
-        uncheckOptions();
     }
     else{
         window.location.assign('index.html');

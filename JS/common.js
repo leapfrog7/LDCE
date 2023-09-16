@@ -689,6 +689,8 @@ function myFunction() {
         for(let i =0;i<nodelist.length;i++){
             nodelist[i].style.display = 'block';
         }
+
+        setMenuAccess();
         document.getElementById('ifLoggedOut').style.opacity = '0';
        
         document.getElementById('logOutBtn').style.opacity = '1';
@@ -701,4 +703,41 @@ function myFunction() {
 //     document.getElementById('ifLoggedOut').style.display = block;
 // }
 
+}
+
+
+//This function sets the number of items in side bar menu. Depending on the accessType. 
+function setMenuAccess() {
+    console.log('inside setMenu Access', localStorage.getItem('accessType'));
+    if(localStorage.getItem('accessType')=='full'){
+        console.log('full access');
+    }
+
+    //If accessType is Paper 1 then hide the Paper2 items
+    if(localStorage.getItem('accessType')=='paper1'){
+
+        const elements = document.getElementsByClassName('paper2');
+        console.log(elements);
+        for(let i = 0; i < elements.length; i++) {
+           // console.log(elements[i].textContent);
+           console.log('chupa do');
+           elements[i].style.display = 'none';
+        }
+
+        console.log('paper 1 access');
+    }
+
+    //If accessType is Paper 2 then hide the paper 1 items
+    if(localStorage.getItem('accessType')=='paper2'){
+
+        const elements = document.getElementsByClassName('paper1');
+        console.log(elements);
+        for(let i = 0; i < elements.length; i++) {
+           // console.log(elements[i].textContent);
+           console.log('chupa do');
+           elements[i].style.display = 'none';
+        }
+
+        console.log('paper 2 access');
+    }
 }

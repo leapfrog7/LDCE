@@ -156,18 +156,18 @@ var Global_C = [
     ['user159','user64954',1],
     ['user137','user45456',1],
     ['user100','user25052',2],
-    ['user119','user35151',1],
+    ['user119','user35151',3],
     ['user163','user65251',1],
-    ['user139','user45353',1],
+    ['user139','user45353',4],
     ['amiya123','amiya15051',1],
     
     ['trial46','trial44856',2],
     ['trial','trial7',2],
     ['aobr123','aobr15051',2],
-    ['ldce123','ldce15051',2],
+    ['ldce123','ldce15051',3],
     
 
 
 ];
 
-// 1=Active; 0 = expired; 2 = trial
+// 1=Active; 0 = expired; 2 = trial, 3 = paper 1 only, 4 = paper 2 only

@@ -9,13 +9,23 @@ function loadAllWorkItems(){
     document.getElementById("check").checked=false;
     myFunction();
     if(localStorage.getItem('sessionValidity')=='true'){
-        let inputStr = document.getElementById('search_input'); 
 
-         if(inputStr.value.length>0){
+        //This checks whether the access is for correct subscription
+        if(localStorage.getItem('accessType')=='paper2'){
+            alert("Your subscription is for paper 2 only.")
+            window.location.assign('index.html');
+        }
+        else{
 
-            inputStr.value='';
+            let inputStr = document.getElementById('search_input'); 
+    
+             if(inputStr.value.length>0){
+    
+                inputStr.value='';
+    
+               }
+        }
 
-           }
     }
 
     else{
