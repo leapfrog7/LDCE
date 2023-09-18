@@ -632,13 +632,13 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
     margin-bottom: 15px;
 }
 
-.paper1 {
+.paper_1 {
   background-image: linear-gradient( 109.6deg,  rgb(216, 149, 5) 11.2%, rgba(255,0,0,1) 100.2% );
   /* color: #700808; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.paper2 {
+.paper_2 {
   background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
 }
 
@@ -649,7 +649,7 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
 .gradient-text {
   font-size: 30px;
   background: linear-gradient(45deg, rgb(173, 2, 70), rgb(115, 9, 181));
-  -webkit-background-clip: text;
+  
   color: transparent;
 }
 
