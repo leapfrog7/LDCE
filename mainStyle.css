@@ -610,7 +610,7 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
 
 .pricing-header {
     text-align: center;
-    color: #6a1711;
+    color: #fafafa;
     margin-bottom: 30px;
 }
 
@@ -647,11 +647,55 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
 }
 
 .gradient-text {
-  font-size: 30px;
+  font-size: 25px;
   background: linear-gradient(45deg, rgb(173, 2, 70), rgb(115, 9, 181));
+  background-clip: text;
   
   color: transparent;
 }
+
+
+/*Toast*/
+
+#toast {
+  visibility: hidden;
+  /* max-width: 80%; */
+  width: 80%;
+  margin: auto;
+  background-color: rgb(51,51,51);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 16px; /* Updated for rounded corners */
+  padding: 16px 20px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 90px; /* Updated to appear at the top */
+  font-size: 1rem;
+  transform: translateX(-50%);
+  opacity: 0; /* Updated for animation */
+  transition: opacity 0.5s ease-in-out; /* Updated for animation */
+}
+
+#toast.success {
+  background-color: #5cb85c;
+  background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+}
+
+#toast.error {
+  background-color: #d9534f;
+}
+
+
+#toast img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+
+/*End Toast*/
 
 /* Media query for smartphones */
 @media screen and (max-width: 768px) {

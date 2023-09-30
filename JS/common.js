@@ -171,6 +171,8 @@ function goNext(){
         
         
         explanation.innerHTML = Explanation_Arr[Question_Counter-1];
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     else{
         alert('Please select an answer before proceeding to the next question.');
@@ -244,6 +246,8 @@ function generateRandomNumbers(max){
 
 function loadAgain(){
     window.location.reload();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
 }
 
 // //Generates one Random Number between 0 and num

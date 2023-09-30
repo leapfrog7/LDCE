@@ -22,6 +22,21 @@ function loadSettings(){
     document.getElementById("check").checked=false;
     myFunction();
 
+    loadToast();
+
+}
+
+function loadToast(){
+    var toastElement = document.getElementById("toast");
+    toastElement.className = "success"; // Add your own logic here to decide the class
+    toastElement.style.visibility = "visible";
+    toastElement.style.opacity = "1"; // Updated for animation
+    setTimeout(function() {
+        toastElement.style.opacity = "0"; // Updated for animation
+        setTimeout(function() {
+            toastElement.style.visibility = "hidden";
+        }, 500); // Wait for the fade-out animation to complete before hiding the element
+    }, 3000);
 }
 
 function hideButtons(){
@@ -130,6 +145,8 @@ function hideAfterLogIn(){
     let uName = document.getElementById('userName').value;
     document.getElementById("packDetails").innerHTML = "Welcome " + uName+ ", you now have access to the following:"
     setTimeout(hideBanner,1000);
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function loadValidUsers(){
