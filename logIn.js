@@ -36,6 +36,7 @@ function hideButtons(){
     quizCCA = document.getElementById('quizCCARules');
     quizDFPR = document.getElementById('quizDFPR');
     quizRTI = document.getElementById('quizRTI');
+    quizPP = document.getElementById('quizPP')
 
     subButton1 = document.getElementById('subQuizBtn');
     subButton2 = document.getElementById('subQuizBtn1');
@@ -47,6 +48,7 @@ function hideButtons(){
     subButton8 = document.getElementById('subQuizBtn7');
     subButton9 = document.getElementById('subQuizBtn8');
     subButton10 = document.getElementById('subQuizBtn9');
+    subButton11 = document.getElementById('subQuizBtn10');
 
     subButton1.style.display='block';
     subButton2.style.display='block';
@@ -58,6 +60,7 @@ function hideButtons(){
     subButton8.style.display='block';
     subButton9.style.display = 'block';
     subButton10.style.display = 'block';
+    subButton11.style.display = 'block';
 
     // list.style.display = 'none';
     quiz.style.display = 'none';
@@ -70,7 +73,9 @@ function hideButtons(){
     quizCCA.style.display = 'none';
     quizDFPR.style.display = 'none';
     quizRTI.style.display = 'none';
+    quizPP.style.display = 'none';
 }
+
 
 function showButtons(){
     list = document.getElementById('list_AOBR');
@@ -83,6 +88,8 @@ function showButtons(){
     quizCCA = document.getElementById('quizCCARules');
     quizDFPR = document.getElementById('quizDFPR');
     quizRTI = document.getElementById('quizRTI');
+    quizPP = document.getElementById('quizPP');
+    
 
     subButton1.style.display = 'none';
     subButton2.style.display = 'none';
@@ -94,6 +101,7 @@ function showButtons(){
     subButton8.style.display = 'none';
     subButton9.style.display = 'none';
     subButton10.style.display = 'none';
+    subButton11.style.display = 'none';
 
     list.style.display = 'block';
     quiz.style.display = 'block';
@@ -106,6 +114,7 @@ function showButtons(){
     quizCCA.style.display = 'block';
     quizDFPR.style.display = 'block';
     quizRTI.style.display = 'block';
+    quizPP.style.display = 'block';
 
     localStorage.setItem('sessionValidity','true');
 }
