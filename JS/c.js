@@ -196,7 +196,7 @@ tovar Global_C = [
     ['nisha116','nisha15750',1],
     ['ravi100','ravi15448',1],
     ['bagish175','bagish75453',1],
-    ['rohit116','rohit15757',1],
+    ['rohit116','rohit15757',1], 
 
     
     ['amit130','amit34951',1],
