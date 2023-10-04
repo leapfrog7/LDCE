@@ -1,4 +1,4 @@
-tovar Global_C = [
+var Global_C = [
 
     ['yatin','yatin',1],
     ['yatin1','yatin11',1],
