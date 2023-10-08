@@ -660,7 +660,7 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
 #toast {
   visibility: hidden;
   /* max-width: 80%; */
-  width: 80%;
+  width: 40%;
   margin: auto;
   background-color: rgb(51,51,51);
   color: rgb(255, 255, 255);
@@ -697,6 +697,84 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
 
 /*End Toast*/
 
+/*FAQ Button and FAQ HTML page*/
+
+#faq-button-container {
+  
+  
+  text-align: center;
+  background-color: #f9f9f9; /* Optional: Set a background color for the container */
+  border-radius: 5px; /* Optional: Makes the corners of the container rounded */
+}
+
+#btn_faq {
+  display: inline-block;
+  background-color: #062059;
+  color: #c9c7f6;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#btn_faq:hover {
+  background-color: #a84242;
+  color: #f9f9f9;
+}
+
+.faq-container {
+  /* max-width: 800px; */
+  margin: auto;
+  padding: 20px;
+}
+
+.faq-question {
+  background-color: #8f3f3f;
+  color: rgb(255, 252, 252);
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #5e0707;
+}
+
+.faq-answer {
+  max-height: 0;
+  font-size: 0.9rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+  padding: 0 20px;
+  margin-bottom: 1rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.faq-answer p {
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc; /* Optional: Add a border between answers if there are multiple paragraphs */
+}
+
+.faq .faq-answer p:last-child {
+  border-bottom: none;
+}
+
+
+
+/*End FAQ button and FAQ HTML page*/
+
 /* Media query for smartphones */
 @media screen and (max-width: 768px) {
     .pricing-options {
@@ -704,6 +782,11 @@ background: linear-gradient(to right, rgb(252, 230, 236), rgba(249, 249, 249, 0.
         gap: 0.8rem;
         
     }
+
+    #toast{
+      width: 80%;
+    }
+
 
     .pricing-card {
       padding: 15px;
