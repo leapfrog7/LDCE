@@ -51,7 +51,8 @@ function hideButtons(){
     quizCCA = document.getElementById('quizCCARules');
     quizDFPR = document.getElementById('quizDFPR');
     quizRTI = document.getElementById('quizRTI');
-    quizPP = document.getElementById('quizPP')
+    quizPP = document.getElementById('quizPP');
+    quizCSMOP = document.getElementById('quizCSMOP');
 
     subButton1 = document.getElementById('subQuizBtn');
     subButton2 = document.getElementById('subQuizBtn1');
@@ -64,6 +65,7 @@ function hideButtons(){
     subButton9 = document.getElementById('subQuizBtn8');
     subButton10 = document.getElementById('subQuizBtn9');
     subButton11 = document.getElementById('subQuizBtn10');
+    subButton12 = document.getElementById('subQuizBtn11');
 
     subButton1.style.display='block';
     subButton2.style.display='block';
@@ -76,6 +78,7 @@ function hideButtons(){
     subButton9.style.display = 'block';
     subButton10.style.display = 'block';
     subButton11.style.display = 'block';
+    subButton12.style.display = 'block';
 
     // list.style.display = 'none';
     quiz.style.display = 'none';
@@ -89,6 +92,7 @@ function hideButtons(){
     quizDFPR.style.display = 'none';
     quizRTI.style.display = 'none';
     quizPP.style.display = 'none';
+    quizCSMOP.style.display = 'none';
 }
 
 
@@ -104,6 +108,7 @@ function showButtons(){
     quizDFPR = document.getElementById('quizDFPR');
     quizRTI = document.getElementById('quizRTI');
     quizPP = document.getElementById('quizPP');
+    quizCSMOP = document.getElementById('quizCSMOP');
     
 
     subButton1.style.display = 'none';
@@ -117,6 +122,7 @@ function showButtons(){
     subButton9.style.display = 'none';
     subButton10.style.display = 'none';
     subButton11.style.display = 'none';
+    subButton12.style.display = 'none';
 
     list.style.display = 'block';
     quiz.style.display = 'block';
@@ -130,6 +136,7 @@ function showButtons(){
     quizDFPR.style.display = 'block';
     quizRTI.style.display = 'block';
     quizPP.style.display = 'block';
+    quizCSMOP.style.display = 'block';
 
     localStorage.setItem('sessionValidity','true');
 }
