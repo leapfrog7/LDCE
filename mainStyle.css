@@ -378,11 +378,10 @@ iframe{
     /* margin-bottom: 10px; */
     font-size: 0.8rem;
     padding-bottom: 0.8rem;
+	  background-color: gray;
    
   }
-  .subscribeBtn:hover{
-    background-color: #d23c3c;
-  }
+ 
 
 
   footer a{
